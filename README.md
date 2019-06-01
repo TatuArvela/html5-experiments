@@ -15,7 +15,7 @@ Credits:
 ![Mystify icon](./mystify32.png?raw=true "Mystify")
 
 Recreation of the classic Windows screensaver Mystify. This one is not a game, but fits here nonetheless.  
-Original Copyright (C) Microsoft Corp. 1991 - 1998
+Copyright of icons (C) Microsoft Corp. 1991 - 1998
 
 [Click to view](https://tatuarvela.github.io/html5-experiments/mystify.html)
 
