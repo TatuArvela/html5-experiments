@@ -4,9 +4,7 @@ Several miscellaneous HTML5 projects
 
 ## Business Card
 
-Credits:
-
-* [Concrete texture by Caym](https://www.deviantart.com/caym/art/Seamless-wall-texture-08-126854484)
+Concrete texture by [Caym](https://www.deviantart.com/caym/art/Seamless-wall-texture-08-126854484)
 
 [Click to view](https://tatuarvela.github.io/html5-experiments/business-card.html)
 
