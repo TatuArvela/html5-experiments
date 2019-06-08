@@ -2,9 +2,15 @@
 
 Several miscellaneous HTML5 projects
 
+## Typography Test #1
+
+Test with low contrast and split channels.
+
+[Click to view](https://tatuarvela.github.io/html5-experiments/typography-test-1.html)
+
 ## Business Card
 
-Concrete texture by [Caym](https://www.deviantart.com/caym/art/Seamless-wall-texture-08-126854484)
+Foil stamped and embossed business card.
 
 [Click to view](https://tatuarvela.github.io/html5-experiments/business-card.html)
 
