@@ -1,0 +1,14 @@
+body {
+  margin: 2px;
+  box-sizing: border-box;
+  height: calc(100vh - 4px);
+  width: calc(100vw - 4px);
+}
+
+body > * {
+  box-sizing: border-box;
+}
+
+body > *:not(:first-child) {
+  margin-top: 2px;
+}

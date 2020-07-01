@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Grid - 4</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Same as grid3 but with shorthand */
+      .grid {
+        display: grid;
+        grid:
+          "header header header header" auto
+          "main main . sidebar" auto
+          "footer footer footer footer" auto
+          / 1fr 1fr 1fr 1fr;
+        border: 2px solid black;
+        height: 480px;
+        width: 640px;
+        box-sizing: content-box;
+      }
+
+      .grid > * {
+        text-align: center;
+      }
+
+      .item-1 {
+        background-color: #00ffff;
+        grid-area: header;
+      }
+
+      .item-2 {
+        background-color: #ffff00;
+        grid-area: main;
+      }
+
+      .item-3 {
+        background-color: #ff00ff;
+        grid-area: sidebar;
+      }
+
+      .item-4 {
+        background-color: #00ff00;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item-1">header</div>
+      <div class="item-2">main</div>
+      <div class="item-3">sidebar</div>
+      <div class="item-4">footer</div>
+    </div>
+  </body>
+</html>
