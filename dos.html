@@ -12,21 +12,20 @@
     }
 
     html {
-      background: url("noise.png"), linear-gradient(#c8c8bd, #999790);
-      background-position: top center, top center;
+      background: url("noise.png") top center, linear-gradient(#c8c8bd, #999790) top center;
       min-width: 1050px;
       min-height: 800px;
       height: 100vh;
       width: 100vw;
     }
     body {
-      font-family: "PC";
+      font-family: "PC", monospace;
       display: block;
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       width: 1050px;
       height: 800px;
       margin: auto;
@@ -38,10 +37,10 @@
     .border {
       display: block;
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       margin: auto;
       background: linear-gradient(38deg, rgba(32, 32, 32, 0.5) 0%,rgba(53, 53, 53, 0.5) 49%,rgba(16, 16, 16, 0.5) 51%,rgba(10, 8, 9, 0.5) 100%), linear-gradient(-38deg, rgba(32, 32, 32, 0.5) 0%,rgba(53, 53, 53, 0.5) 49%,rgba(16, 16, 16, 0.5) 51%,rgba(10, 8, 9, 0.5) 100%);
       border-radius: 30px;
@@ -50,10 +49,10 @@
     }
     canvas {
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       margin: auto;
       background: #101010;
       box-shadow: 0 0 20px -1px #000000;
@@ -94,8 +93,8 @@
     const c = document.getElementById('canvas');
     c.width = 800;
     c.height = 600;
-    const ctx = canvas.getContext('2d');
-    const t = document.getElementById('input');
+    const ctx = c.getContext('2d');
+    // const t = document.getElementById('input');
     
     let text = "\
 \n\
@@ -144,7 +143,7 @@ C:\\>dir/w\n\
       if (filename[1])
         output += filename[1];
       text = text + output.padEnd(16);
-      if (i%5 == 0) {
+      if (i%5 === 0) {
         text = text + "\n";
       }
     }
@@ -156,8 +155,6 @@ C:\\>dir/w\n\
     let shownLines = 1;
 
     function draw() {
-      ctx.filter = "blur(0.5px)";
-
       ctx.fillStyle = "#101010";
       ctx.fillRect(0, 0, c.width, c.height);
 
@@ -166,13 +163,13 @@ C:\\>dir/w\n\
       ctx.shadowBlur = 2;
       ctx.font = '16px "PC"';
 
-      var lineheight = 16;
-      var spacing = 16;
-      var lines = text.split('\n');
+      const lineheight = 16;
+      const spacing = 16;
+      const lines = text.split('\n');
 
-      for (var j = 0; j < shownLines; j++) {
+      for (let j = 0; j < shownLines; j++) {
         let output;
-        if (j == lines.length-1) {
+        if (j === lines.length-1) {
           output = showDash ? lines[j] + "_" : lines[j];
           showDash = !showDash;
         }

@@ -1,0 +1,14 @@
+{
+  "name": "web-stuff",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --check \"**/*.html\"",
+    "prettier:fix": "yarn prettier -- --write",
+    "serve": "serve"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "serve": "^11.3.2"
+  }
+}
